@@ -1,3 +1,9 @@
+/*
+ * ACME_AGENT_HANDOFF_TEMP — REMOVE AFTER IMPLEMENTATION
+ * TASK: Reuse agente LLM/model-chain only through safe API or extracted interface. Make proposals read-only until verified human approval; constrain tools and audit every action. Delete this instruction block when approval wiring is complete.
+ * BEFORE REMOVAL: record changed paths, upstream SHA, tests/evidence and residual risks
+ * in docs/reports/. Remove only this temporary instruction, not functional comments.
+ */
 /** The LLM proposes; policy and runtime dispose. */
 export class OperatorAgent{
  constructor({planner,policy,scheduler,audit}){Object.assign(this,{planner,policy,scheduler,audit});}
