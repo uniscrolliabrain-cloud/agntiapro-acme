@@ -1,0 +1,10 @@
+import {readFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {BusinessClock} from './clock.mjs';
+import {MockProvider} from './provider.mjs';
+import {FileReceiptStore} from './store.mjs';
+import {releaseDue} from './engine.mjs';
+const scenario=JSON.parse(await readFile(resolve(process.argv[2]||'scenarios/lead-airtable.json'),'utf8'));
+const clock=new BusinessClock({mode:'manual',startAt:process.env.ACME_AT||'2026-11-23T10:00:00.000Z'});
+const results=await releaseDue({scenario,clock,provider:new MockProvider(),store:new FileReceiptStore('.state/receipts.json')});
+console.log(JSON.stringify({mode:'DRY_RUN_ONLY',at:clock.now().toISOString(),results},null,2));
