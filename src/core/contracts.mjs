@@ -1,3 +1,9 @@
+/*
+ * ACME_AGENT_HANDOFF_TEMP — REMOVE AFTER IMPLEMENTATION
+ * TASK: Compare against agente/packages/domain and Event Bus schema at pinned SHA. Replace local envelope with shared versioned Zod contracts; preserve tenant provenance and idempotency. Delete this instruction block only after contract compatibility is verified.
+ * BEFORE REMOVAL: record changed paths, upstream SHA, tests/evidence and residual risks
+ * in docs/reports/. Remove only this temporary instruction, not functional comments.
+ */
 /** ACME local contracts. Replace with versioned imports from agente once audited. */
 export const SOURCES=Object.freeze(['synthetic','sandbox','real']);
 export const JOB_STATES=Object.freeze(['planned','queued','leased','delivered','verified','failed','dead_letter','blocked']);
