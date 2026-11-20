@@ -1,0 +1,1 @@
+{"id":"lead-airtable-001","version":1,"timezone":"Europe/Madrid","events":[{"id":"lead-001","releaseAt":"2026-11-23T09:12:00.000Z","provider":"mock","operation":"createRecord","payload":{"name":"Empresa Ejemplo Uno","email":"contacto@example.com","status":"new","synthetic":true}}]}
