@@ -1,3 +1,9 @@
+/*
+ * ACME_AGENT_HANDOFF_TEMP — REMOVE AFTER IMPLEMENTATION
+ * TASK: Inspect agente bootstrap and DI lifecycle. Bind real repositories, configuration, identity and secret providers; avoid copying global kernel or RLS initialization. Delete this instruction block after integration wiring is validated.
+ * BEFORE REMOVAL: record changed paths, upstream SHA, tests/evidence and residual risks
+ * in docs/reports/. Remove only this temporary instruction, not functional comments.
+ */
 import {ProviderRegistry} from '../core/registry.mjs';
 import {Policy} from '../core/policy.mjs';
 import {AirtableAdapter} from '../adapters/airtable.mjs';
