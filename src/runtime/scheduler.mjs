@@ -1,3 +1,9 @@
+/*
+ * ACME_AGENT_HANDOFF_TEMP — REMOVE AFTER IMPLEMENTATION
+ * TASK: Port scheduling semantics carefully from agente/sop-triggers.ts without importing its tenant/store coupling. Implement IANA timezone, business calendar, durable release markers and deterministic replay. Delete this instruction block after release behavior is implemented.
+ * BEFORE REMOVAL: record changed paths, upstream SHA, tests/evidence and residual risks
+ * in docs/reports/. Remove only this temporary instruction, not functional comments.
+ */
 import {envelope} from '../core/contracts.mjs';
 /** Converts due scenario events to jobs; persistence delegated to JobRepository. */
 export class ScenarioScheduler{
